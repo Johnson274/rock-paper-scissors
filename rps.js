@@ -11,3 +11,6 @@ function getHumanChoice(){
     else if (input === "Paper") return "Paper";
     else if (input === "Scissors") return "Scissors"
 }
+
+let humanScore = 0
+let computerScore = 0
