@@ -4,3 +4,10 @@ function getComputerChoice(){
     else if (randomNumber===1) return "paper";
     else if (randomNumber===2) return "scissors"
 }
+
+function getHumanChoice(){
+    let input = prompt("Choose Rock, Paper,or Scissors");
+    if(input === "Rock") return "Rock";
+    else if (input === "Paper") return "Paper";
+    else if (input === "Scissors") return "Scissors"
+}
