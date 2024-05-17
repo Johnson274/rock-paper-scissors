@@ -6,10 +6,12 @@ function getComputerChoice(){
 }
 
 function getHumanChoice(){
-    let input = prompt("Choose Rock, Paper,or Scissors");
-    if(input === "Rock") return "Rock";
-    else if (input === "Paper") return "Paper";
-    else if (input === "Scissors") return "Scissors"
+    let userInput = prompt("Choose Rock, Paper,or Scissors");
+    let finalUserInput = userInput.toLowerCase();
+    
+    if(finalUserInput === "rock") return "Rock";
+    else if (finalUserInput === "paper") return "Paper";
+    else if (finalUserInput === "scissors") return "Scissors"
 }
 
 function playRound(humanChoice,computerChoice){
