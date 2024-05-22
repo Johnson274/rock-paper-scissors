@@ -1,3 +1,8 @@
+let humanScore = 0;
+let computerScore = 0; 
+
+
+
 function getComputerChoice(){
     let randomNumber = Math.floor(Math.random() * 3);
     if (randomNumber===0) return "Rock";
@@ -27,8 +32,7 @@ function playRound(humanChoice,computerChoice){
     else if (humanChoice === "scissors" && computerChoice === "scissors") return "It's a tie";
 }
 
-let humanScore = 0
-let computerScore = 0 
+
 
 const humanChoice = getHumanChoice();
 const computerChoice = getComputerChoice();
