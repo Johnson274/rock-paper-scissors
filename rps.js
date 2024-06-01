@@ -10,7 +10,10 @@ function getComputerChoice(){
     else if (randomNumber===2) return "Scissors"
 }
 
-function playRound(){}
+function playRound(){
+    const humanChoice = getHumanChoice();
+    const computerChoice = getComputerChoice();
+}
 
 function getHumanChoice(){
     let userInput = prompt("Choose Rock, Paper,or Scissors");
@@ -36,5 +39,3 @@ function checkWinner(humanChoice,computerChoice){
 
 
 
-const humanChoice = getHumanChoice();
-const computerChoice = getComputerChoice();
