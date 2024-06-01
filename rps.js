@@ -19,7 +19,7 @@ function getHumanChoice(){
     else if (finalUserInput === "scissors") return "Scissors";
 }
 
-function checkWinnner(humanChoice,computerChoice){
+function checkWinner(humanChoice,computerChoice){
 
     if (humanChoice === "rock" && computerChoice === "rock") return "It's a tie";
     else if (humanChoice === "rock" && computerChoice === "paper") return "You lose! Paper beats Rock";
