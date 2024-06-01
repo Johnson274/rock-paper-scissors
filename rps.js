@@ -10,6 +10,8 @@ function getComputerChoice(){
     else if (randomNumber===2) return "Scissors"
 }
 
+function playRound(){}
+
 function getHumanChoice(){
     let userInput = prompt("Choose Rock, Paper,or Scissors");
     let finalUserInput = userInput.toLowerCase();
