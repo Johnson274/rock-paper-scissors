@@ -24,17 +24,21 @@ function getHumanChoice(){
     else if (finalUserInput === "scissors") return "Scissors";
 }
 
-function checkWinner(humanChoice,computerChoice){
+function checkWinner(choiceP,choiceC){
 
-    if (humanChoice === "rock" && computerChoice === "rock") return "It's a tie";
-    else if (humanChoice === "rock" && computerChoice === "paper") return "You lose! Paper beats Rock";
-    else if (humanChoice === "rock" && computerChoice === "scissors") return "You win! Rock beats Scissors";
-    else if (humanChoice === "paper" && computerChoice === "rock") return "You win! Paper beats Rock";
-    else if (humanChoice === "paper" && computerChoice === "paper") return "It's a tie";
-    else if (humanChoice === "paper" && computerChoice === "scissors") return "You lose, Scissors beats Paper";
-    else if (humanChoice === "scissors" && computerChoice === "rock") return "You lose, Rock beats Scissors";
-    else if (humanChoice === "scissors" && computerChoice === "paper") return "You win, Scissors beats Paper";
-    else if (humanChoice === "scissors" && computerChoice === "scissors") return "It's a tie";
+  if(choiceP === choiceC){
+    return "Tie";
+  }else if( 
+  (choiceP === "rock" && choiceC === "scissors") || 
+  (choiceP === "paper" && choiceC === "rock") || 
+  (choiceP === "scissors" && choiceC === "paper")
+  ) 
+   {return "Player Wins";
+} else{
+    return "Computer Wins";
+}
+  
+    
 }
 
 
