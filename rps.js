@@ -13,6 +13,7 @@ function getComputerChoice(){
 function playRound(){
     const humanChoice = getHumanChoice();
     const computerChoice = getComputerChoice();
+    const winner = checkWinner(humanChoice,computerChoice)
 }
 
 function getHumanChoice(){
