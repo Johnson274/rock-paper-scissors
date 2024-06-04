@@ -23,6 +23,10 @@ function getHumanChoice(){
     if(finalUserInput === "rock") return "Rock";
     else if (finalUserInput === "paper") return "Paper";
     else if (finalUserInput === "scissors") return "Scissors";
+    
+    while(finalUserInput== null){
+        finalUserInput = prompt("Choose Rock, Paper, or Scissors");
+    }
 }
 
 function checkWinner(choiceP,choiceC){
