@@ -8,6 +8,7 @@ function getComputerChoice(){
     if (randomNumber===0) return "Rock";
     else if (randomNumber===1) return "Paper";
     else if (randomNumber===2) return "Scissors"
+
 }
 
 function playRound(){
@@ -34,9 +35,9 @@ function checkWinner(choiceP,choiceC){
   if(choiceP === choiceC){
     return "Tie";
   }else if( 
-  (choiceP === "rock" && choiceC === "scissors") || 
-  (choiceP === "paper" && choiceC === "rock") || 
-  (choiceP === "scissors" && choiceC === "paper")
+  (choiceP === "Rock" && choiceC === "Scissors") || 
+  (choiceP === "Paper" && choiceC === "Rock") || 
+  (choiceP === "Scissors" && choiceC === "Paper")
   ) 
    {return "Player Wins";
 } else{
