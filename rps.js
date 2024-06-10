@@ -3,6 +3,13 @@ let computerScore = 0;
 
 
 
+function playRound(){
+    const humanChoice = getHumanChoice();
+    const computerChoice = getComputerChoice();
+    const winner = checkWinner(humanChoice,computerChoice)
+}
+
+
 function getComputerChoice(){
     let randomNumber = Math.floor(Math.random() * 3);
     if (randomNumber===0) return "Rock";
@@ -11,11 +18,7 @@ function getComputerChoice(){
 
 }
 
-function playRound(){
-    const humanChoice = getHumanChoice();
-    const computerChoice = getComputerChoice();
-    const winner = checkWinner(humanChoice,computerChoice)
-}
+
 
 function getHumanChoice(){
     let userInput = prompt("Choose Rock, Paper,or Scissors");
