@@ -2,6 +2,10 @@ let humanScore = 0;
 let computerScore = 0; 
 
 
+function playGame(){}
+
+
+
 
 function playRound(){
     const humanChoice = getHumanChoice();
