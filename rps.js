@@ -1,8 +1,16 @@
+const choices = ["rock","paper","scissors"]
+
+
+
 let humanScore = 0;
 let computerScore = 0; 
 
 
-function playGame(){}
+function playGame(){
+    for (i = 0; i <=5; i++){
+        playRound()
+    }
+}
 
 
 
