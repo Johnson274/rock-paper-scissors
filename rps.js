@@ -30,16 +30,11 @@ function getComputerChoice(){
 
 
 function getHumanChoice(){
-    let userInput = prompt("Choose Rock, Paper,or Scissors");
-    let finalUserInput = userInput.toLowerCase();
-    
-    if(finalUserInput === "rock") return "Rock";
-    else if (finalUserInput === "paper") return "Paper";
-    else if (finalUserInput === "scissors") return "Scissors";
-    
-    while(finalUserInput== null){
-        finalUserInput = prompt("Choose Rock, Paper, or Scissors");
+    let input = prompt("Choose Rock, Paper,or Scissors");
+    while(input == null){
+        input = promt("Type Rock, Paper, or Scissors");
     }
+    input = input.toLowerCase();
 }
 
 function checkWinner(choiceP,choiceC){
