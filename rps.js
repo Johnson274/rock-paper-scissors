@@ -37,6 +37,17 @@ function getHumanChoice(){
     input = input.toLowerCase();
 }
 
+
+function validateInput(choice){
+    if (choices.includes(choice)){
+        return true;
+        }else{
+            return false;
+        }
+}
+
+
+
 function checkWinner(choiceP,choiceC){
 
   if(choiceP === choiceC){
