@@ -35,6 +35,10 @@ function getHumanChoice(){
         input = promt("Type Rock, Paper, or Scissors");
     }
     input = input.toLowerCase();
+    let check = validateInput(input);
+    if(check == true){
+        console.log(input);
+    }
 }
 
 
