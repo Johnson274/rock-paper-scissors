@@ -18,7 +18,8 @@ function playGame(){
 function playRound(){
     const humanChoice = getHumanChoice();
     const computerChoice = getComputerChoice();
-    const winner = checkWinner(humanChoice,computerChoice)
+    const winner = checkWinner(humanChoice,computerChoice);
+    winners.push(winner);
 }
 
 
