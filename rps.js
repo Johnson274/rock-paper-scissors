@@ -1,5 +1,5 @@
 const choices = ["rock","paper","scissors"]
-
+const winners =[];
 
 
 let humanScore = 0;
@@ -73,9 +73,10 @@ function checkWinner(choiceP,choiceC){
 } else{
     return "Computer Wins";
 }
-  
-    
+     
 }
+
+
 
 
 
