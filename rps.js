@@ -36,9 +36,17 @@ function getHumanChoice(){
     }
     input = input.toLowerCase();
     let check = validateInput(input);
-    if(check == true){
-        console.log(input);
+    while (check == false){
+        input = promt(
+            "Type Rock, Paper, or Scissors. Spelling needs to be correct, but capitlization doesn't matter"
+        );
+        while (input == null){
+            input = promt("Type Rock, Paper, or Scissors");
+        }
+       input = input.toLowerCase();
+       check= validateInput(input);
     }
+    return input;
 }
 
 
