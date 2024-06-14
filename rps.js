@@ -77,6 +77,9 @@ function checkWinner(choiceP,choiceC){
      
 }
 
+function logWins(){
+    console.log(winners);
+}
 
 
 
