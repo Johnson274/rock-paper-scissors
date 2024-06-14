@@ -8,8 +8,9 @@ let computerScore = 0;
 
 function playGame(){
     for (i = 1; i <=5; i++){
-        playRound()
+        playRound();
     }
+    logWins()
 }
 
 
