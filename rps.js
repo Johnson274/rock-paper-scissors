@@ -12,11 +12,12 @@ function playGame(){
 
 
 
-function playRound(){
+function playRound(round){
     const humanChoice = getHumanChoice();
     const computerChoice = getComputerChoice();
     const winner = checkWinner(humanChoice,computerChoice);
     winners.push(winner);
+    logRound(humanChoice,computerChoice,winner,round);
 }
 
 
