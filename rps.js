@@ -2,10 +2,6 @@ const choices = ["rock","paper","scissors"]
 const winners =[];
 
 
-let humanScore = 0;
-let computerScore = 0; 
-
-
 function playGame(){
     for (i = 1; i <=5; i++){
         playRound();
@@ -88,6 +84,12 @@ function logWins(){
     console.log("Ties:",ties);
 }
 
+function logRound(humanChoice,computerChoice,winner,round){
+    console.log("Round:",round)
+    console.log("Player Chose:",humanChoice);
+    console.log("Computer Chose:", computerChoice);
+    console.log(winner, "won the Round")
+}
 
 
 
