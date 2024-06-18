@@ -4,7 +4,7 @@ const winners =[];
 
 function playGame(){
     for (i = 1; i <=5; i++){
-        playRound();
+        playRound(i);
     }
     logWins()
 }
