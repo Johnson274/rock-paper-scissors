@@ -64,9 +64,9 @@ function checkWinner(choiceP,choiceC){
   if(choiceP === choiceC){
     return "Tie";
   }else if( 
-  (choiceP === "Rock" && choiceC === "Scissors") || 
-  (choiceP === "Paper" && choiceC === "Rock") || 
-  (choiceP === "Scissors" && choiceC === "Paper")
+  (choiceP === "rock" && choiceC === "scissors") || 
+  (choiceP === "paper" && choiceC === "rock") || 
+  (choiceP === "scissors" && choiceC === "paper")
   ) 
    {return "Player Wins";
 } else{
