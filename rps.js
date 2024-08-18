@@ -1,4 +1,4 @@
-const choices = ["rock","paper","scissors"]
+const choices = ["rock","paper","scissors"];
 const winners =[];
 
 
