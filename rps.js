@@ -6,7 +6,7 @@ function playGame(){
     for (i = 1; i <=5; i++){
         playRound(i);
     }
-    logWins()
+    logWins();
 }
 
 
@@ -80,7 +80,7 @@ function logWins(){
     let computerWins = winners.filter((item)=> item == "Computer").length;
     let ties = winners.filter((item)=> item == "Tie").length;
     console.log("Results:");
-    consol.log("Player Win:", playerWins);
+    console.log("Player Win:", playerWins);
     console.log("Computer Wins:", computerWins);
     console.log("Ties:",ties);
 }
