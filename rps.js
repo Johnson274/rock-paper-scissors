@@ -68,9 +68,9 @@ function checkWinner(choiceP,choiceC){
   (choiceP === "paper" && choiceC === "rock") || 
   (choiceP === "scissors" && choiceC === "paper")
   ) 
-   {return "Player Wins";
+   {return "Player";
 } else{
-    return "Computer Wins";
+    return "Computer";
 }
      
 }
