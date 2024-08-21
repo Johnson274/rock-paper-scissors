@@ -31,16 +31,16 @@ function getComputerChoice(){
 function getHumanChoice(){
     let input = prompt("Choose Rock, Paper,or Scissors");
     while(input == null){
-        input = promt("Type Rock, Paper, or Scissors");
+        input = prompt("Type Rock, Paper, or Scissors");
     }
     input = input.toLowerCase();
     let check = validateInput(input);
     while (check == false){
-        input = promt(
+        input = prompt(
             "Type Rock, Paper, or Scissors. Spelling needs to be correct, but capitlization doesn't matter"
         );
         while (input == null){
-            input = promt("Type Rock, Paper, or Scissors");
+            input = prompt("Type Rock, Paper, or Scissors");
         }
        input = input.toLowerCase();
        check= validateInput(input);
